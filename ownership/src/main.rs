@@ -192,53 +192,53 @@ fn main() {
 //   }
 // }
 
-fn main() {
-    let my_string = String::from("hello world");
+// fn main() {
+//     let my_string = String::from("hello world");
 
-    // `first_word` works on slices of `String`s, whether partial
-    // or whole.
-    let word = first_word(&my_string[0..6]);
+//     // `first_word` works on slices of `String`s, whether partial
+//     // or whole.
+//     let word = first_word(&my_string[0..6]);
 
-    print!("{word}");
+//     print!("{word}");
 
-    let word = first_word(&my_string[..]);
+//     let word = first_word(&my_string[..]);
 
-    print!("{word}");
-    // `first_word` also works on references to `String`s, which
-    // are equivalent to whole slices of `String`s.
-    let word = first_word(&my_string);
+//     print!("{word}");
+//     // `first_word` also works on references to `String`s, which
+//     // are equivalent to whole slices of `String`s.
+//     let word = first_word(&my_string);
 
-    print!("{word}");
+//     print!("{word}");
 
-    let my_string_literal = "hello world";
+//     let my_string_literal = "hello world";
 
-    // `first_word` works on slices of string literals,
-    // whether partial or whole.
-    let word = first_word(&my_string_literal[0..6]);
+//     // `first_word` works on slices of string literals,
+//     // whether partial or whole.
+//     let word = first_word(&my_string_literal[0..6]);
 
-    print!("{word}");
+//     print!("{word}");
 
-    let word = first_word(&my_string_literal[..]);
+//     let word = first_word(&my_string_literal[..]);
 
-    print!("{word}");
-    // Because string literals *are* string slices already,
-    // this works too, without the slice syntax!
-    let word = first_word(my_string_literal);
+//     print!("{word}");
+//     // Because string literals *are* string slices already,
+//     // this works too, without the slice syntax!
+//     let word = first_word(my_string_literal);
 
-    print!("{word}");
-}
+//     print!("{word}");
+// }
 
-fn first_word(s: &str) -> &str {
-    let bytes = s.as_bytes();
+// fn first_word(s: &str) -> &str {
+//     let bytes = s.as_bytes();
   
-      for (i, &item) in bytes.iter().enumerate() {
-        if item == b' ' {
-              return &s[0..i];
-          }
-      }
+//       for (i, &item) in bytes.iter().enumerate() {
+//         if item == b' ' {
+//               return &s[0..i];
+//           }
+//       }
   
-    &s[..]
-  }
+//     &s[..]
+//   }
 
 // fn main() {
 
