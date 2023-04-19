@@ -8,19 +8,19 @@
 //     println!("{s}"); // this will print `hello, world!`
 // }
 
-fn main() {
-    let x = 5;
-    let y = x;
+// fn main() {
+//     let x = 5;
+//     let y = x;
 
-    println!("{x} = x, {y} = y");
+//     println!("{x} = x, {y} = y");
 
-    let s1 = String::from("hello");
-    let s2 = s1.clone();
-    // let s2 = &s1;
+//     let s1 = String::from("hello");
+//     let s2 = s1.clone();
+//     // let s2 = &s1;
 
-    println!("{s1}, world!");
-    print!("{s1} = s1, {s2} = s2");
-}
+//     println!("{s1}, world!");
+//     print!("{s1} = s1, {s2} = s2");
+// }
 
 // fn main() {
 //     let mut s = String::from("hello");  // s comes into scope
