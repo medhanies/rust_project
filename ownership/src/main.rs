@@ -240,18 +240,18 @@
 //     &s[..]
 //   }
 
-// fn main() {
+fn main() {
 
-//     let a = [1,2,3,4,5];
+    let a = [1,2,3,4,5];
 
-//     // let slice = &a[1..3];
+    // let slice = &a[1..3];
 
-//     let slice = &a;
+    let slice = &a;
 
-//     // assert_eq!(slice, &[2, 3]);
+    // assert_eq!(slice, &[2, 3]);
 
-//     // println!("{:?}", slice);
+    // println!("{:?}", slice);
 
-//     assert_eq!(slice, &[1,2,3,4,5]);
-//     println!("{:?}", slice);
-// }
+    assert_eq!(slice, &[1,2,3,4,5]);
+    println!("{:?}", slice);
+}
